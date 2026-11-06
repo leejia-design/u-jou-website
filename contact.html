@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>상담 문의 — U-JOU</title>
+  <link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+  <link rel="stylesheet" href="style-v2.css" />
+  <script src="https://unpkg.com/lenis@1/dist/lenis.min.js"></script>
+</head>
+<body>
+
+  <!-- ============================ NAVBAR ============================= -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">
+          <svg width="30" height="30" viewBox="0 0 28 28" fill="none">
+            <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/>
+            <circle cx="18.5" cy="18.5" r="7" fill="#C6F135"/>
+          </svg>
+        </span>
+        U-JOU
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#google-review">구글 리뷰</a></li>
+        <li><a href="index.html#services">서비스</a></li>
+        <li><a href="index.html#diagnosis">SEO·GEO 진단</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="sns-operation.html">글로벌 SNS</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn--outline">상담 문의</a>
+        <a href="index.html#diagnosis" class="btn btn--nav-lime">SEO·GEO 진단</a>
+      </div>
+      <button class="nav-hamburger" id="navHamburger" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul class="mobile-menu-links">
+        <li><a href="index.html#google-review">구글 리뷰</a></li>
+        <li><a href="index.html#services">서비스</a></li>
+        <li><a href="index.html#diagnosis">SEO·GEO 진단</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="sns-operation.html">글로벌 SNS</a></li>
+      </ul>
+      <div class="mobile-menu-actions">
+        <a href="contact.html" class="btn btn--outline">상담 문의</a>
+        <a href="index.html#diagnosis" class="btn btn--nav-lime">SEO·GEO 진단</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================ CONTACT FORM ============================= -->
+  <section class="section">
+    <div class="container">
+      <div class="diag-card contact-card">
+        <p class="eyebrow">CONTACT</p>
+        <h2 class="h2">상담 문의</h2>
+        <p class="lead">연락처와 문의 내용을 남겨주시면 담당자가 확인 후 빠르게 연락드립니다.</p>
+        <form class="diag-form" id="contactForm" action="https://formspree.io/f/mbgjryld" method="POST">
+          <label class="contact-field">문의 서비스<select name="service" id="contactService" class="diag-input" required><option value="">서비스를 선택해주세요</option><option value="google-review">구글 리뷰 마케팅</option><option value="seo-geo">SEO·GEO</option><option value="global-sns">글로벌 SNS</option><option value="other">통합 상담 / 기타</option></select></label>
+          <div class="diag-form-row">
+            <label class="contact-field">이름<input type="text" name="name" class="diag-input" autocomplete="name" required /></label>
+            <label class="contact-field">연락처<input type="tel" name="phone" class="diag-input" autocomplete="tel" required /></label>
+          </div>
+          <div class="diag-form-row">
+            <label class="contact-field">이메일<input type="email" name="email" class="diag-input" autocomplete="email" required /></label>
+            <label class="contact-field">매장명 / 회사명 (선택)<input type="text" name="company" class="diag-input" autocomplete="organization" /></label>
+          </div>
+          <label class="contact-field">구글 지도 / 홈페이지 링크 (선택)<input type="url" name="business_url" class="diag-input" placeholder="https://" aria-describedby="businessUrlHelp" /></label>
+          <p class="contact-help" id="businessUrlHelp">홈페이지가 없어도 상담할 수 있습니다. 링크가 없다면 문의 내용에 매장명과 지역을 남겨주세요.</p>
+          <label class="contact-field">문의 내용<textarea name="message" class="diag-textarea" placeholder="매장 위치, 현재 고민, 필요한 서비스를 알려주세요." required></textarea></label>
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+          <button type="submit" class="btn btn--lime btn--lg contact-submit">상담 신청하기</button>
+          <p class="diag-msg" id="contactMsg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FOOTER ============================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">
+          <svg width="30" height="30" viewBox="0 0 28 28" fill="none">
+            <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/>
+            <circle cx="18.5" cy="18.5" r="7" fill="#C6F135"/>
+          </svg>
+        </span>
+          U-JOU<span class="footer-logo-tag">AD</span>
+        </a>
+        <div class="footer-links">
+          <a href="index.html#services">서비스안내</a>
+          <a href="index.html#faq">자주 묻는 질문</a>
+          <a href="#">개인정보처리방침</a>
+          <a href="contact.html">문의하기</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>(주)유조우애드 · CEO [미정] · CONTACT [미정] · LOCATION [미정]</span>
+        <span>U-JOU AD — GOOGLE REVIEW · SEO · GEO</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script-v2.js"></script>
+</body>
+</html>

@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>U-JOU — 구글 리뷰 마케팅부터 SEO·GEO까지</title>
+  <meta name="description" content="구글에서 찾고, 리뷰로 선택하는 고객들. 유조유의 구글 리뷰 마케팅부터 SEO·GEO, 글로벌 SNS까지 브랜드의 발견과 선택을 함께 설계합니다." />
+  <link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+  <link rel="stylesheet" href="style-v2.css?v=seo-label-white" />
+  <script src="https://unpkg.com/lenis@1/dist/lenis.min.js"></script>
+</head>
+<body>
+
+  <!-- ============================ NAVBAR ============================= -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-mark">
+          <svg width="30" height="30" viewBox="0 0 28 28" fill="none">
+            <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/>
+            <circle cx="18.5" cy="18.5" r="7" fill="#C6F135"/>
+          </svg>
+        </span>
+        <span class="logo-word">U-JOU<span class="logo-tag">AD</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#google-review">구글 리뷰</a></li>
+        <li><a href="#services">서비스</a></li>
+        <li><a href="#diagnosis">SEO·GEO 진단</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="sns-operation.html">글로벌 SNS</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn--outline">상담 문의</a>
+        <a href="#diagnosis" class="btn btn--nav-lime">SEO·GEO 진단</a>
+      </div>
+      <button class="nav-hamburger" id="navHamburger" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul class="mobile-menu-links">
+        <li><a href="#google-review">구글 리뷰</a></li>
+        <li><a href="#services">서비스</a></li>
+        <li><a href="#diagnosis">SEO·GEO 진단</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="sns-operation.html">글로벌 SNS</a></li>
+      </ul>
+      <div class="mobile-menu-actions">
+        <a href="contact.html" class="btn btn--outline">상담 문의</a>
+        <a href="#diagnosis" class="btn btn--nav-lime">SEO·GEO 진단</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================ HERO ============================= -->
+  <section class="hero review-hero">
+    <svg class="hero-orbit-art" viewBox="16 16 2368 926" preserveAspectRatio="xMaxYMid slice" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="hero-orbit-fade"><stop offset="0%" stop-color="white"/><stop offset="42%" stop-color="white"/><stop offset="47%" stop-color="black"/><stop offset="100%" stop-color="black"/></linearGradient>
+        <linearGradient id="hero-orbit-reveal"><stop offset="0%" stop-color="black"/><stop offset="42%" stop-color="black"/><stop offset="47%" stop-color="white"/><stop offset="100%" stop-color="white"/></linearGradient>
+        <radialGradient id="hero-gloss-light">
+          <stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+          <stop offset=".24" stop-color="#ffffff" stop-opacity=".95"/>
+          <stop offset=".55" stop-color="#f1ffdf" stop-opacity=".55"/>
+          <stop offset="1" stop-color="#e7ffd0" stop-opacity="0"/>
+        </radialGradient>
+        <mask id="hero-fixed-mask"><rect width="2400" height="958" fill="url(#hero-orbit-fade)"/></mask>
+        <mask id="hero-moving-mask"><rect width="2400" height="958" fill="url(#hero-orbit-reveal)"/></mask>
+      </defs>
+      <image href="images-2/hero_abstract_spheres_1787555147284.jpg" width="2400" height="958" mask="url(#hero-fixed-mask)"/>
+      <g mask="url(#hero-moving-mask)">
+        <g class="hero-orbit-float">
+          <image href="images-2/hero_abstract_spheres_1787555147284.jpg" width="2400" height="958"/>
+          <g class="hero-sphere-gloss hero-sphere-gloss--upper">
+            <ellipse cx="1490" cy="184" rx="56" ry="35" transform="rotate(-48 1490 184)" fill="url(#hero-gloss-light)"/>
+          </g>
+          <g class="hero-sphere-gloss hero-sphere-gloss--lower">
+            <ellipse cx="1348" cy="588" rx="70" ry="40" transform="rotate(-42 1348 588)" fill="url(#hero-gloss-light)"/>
+            <path d="M1348 568 Q1351 585 1368 588 Q1351 591 1348 608 Q1345 591 1328 588 Q1345 585 1348 568Z" fill="#fff" opacity=".95"/>
+          </g>
+        </g>
+      </g>
+    </svg>
+    <div class="container review-hero-grid">
+      <div class="hero-body">
+        <p class="eyebrow light">GOOGLE REVIEW MARKETING</p>
+        <h1 class="hero-title">고객은 구글에서 찾고,<br><em>리뷰로 선택합니다.</em><br><span class="hero-title-question">우리 매장은 준비되어 있나요?</span></h1>
+        <p class="hero-desc">처음 방문하는 고객도 우리 매장을 이해하고 선택할 수 있도록.<br> 구글 지도 정보부터 사진, 실제 고객 리뷰와 답변까지 관리합니다.</p>
+        <div class="hero-actions">
+          <a href="contact.html?service=google-review" class="btn btn--lime btn--lg">우리 매장 리뷰 관리 상담하기 ↗</a>
+          <a href="#google-review" class="btn btn--outline-lime btn--lg">서비스 알아보기</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section review-section" id="google-review">
+    <div class="container">
+      <div class="review-intro-grid review-intro-simple">
+        <div class="review-intro-copy">
+          <h2 class="h2">고객은 방문하기 전에,<br>이미 매장을 <span class="review-title-highlight">경험합니다.</span></h2>
+          <p class="lead">어떤 사진이 보이는지, 최근 후기는 어떤지,<br>필요한 정보가 있는지.<br>구글 지도에 보이는 모습이 우리 매장의 첫인상이 됩니다.</p>
+          <ol class="review-journey-inline" aria-label="고객의 방문 과정">
+            <li><span class="review-journey-number" aria-hidden="true">01</span><h3>발견</h3></li>
+            <li><span class="review-journey-number" aria-hidden="true">02</span><h3>비교</h3></li>
+            <li><span class="review-journey-number" aria-hidden="true">03</span><h3>방문</h3></li>
+          </ol>
+        </div>
+        <figure class="review-intro-image">
+          <img src="images-2/google-review-intro-transparent-v4.png" width="1217" height="1292" alt="구글 지도 리뷰 예시: 카페 사진과 평점, 방문 고객 후기, 길찾기 정보를 통해 매장의 첫인상을 확인하는 화면" loading="lazy" />
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt review-management-section review-service-flow" id="review-management">
+    <div class="container">
+      <header class="review-flow-heading">
+        <h2 class="h2">매장의 장점이, 검색 화면에서도 보이도록.</h2>
+        <p class="lead">정확한 정보와 생생한 사진, 실제 고객의 후기와 답변.<br>고객이 방문을 결정할 때 살펴보는 정보를 관리합니다.</p>
+      </header>
+      <ol class="review-flow-steps" aria-label="리뷰 관리 과정">
+        <li><span class="review-flow-number">01</span><h3>매장 정보 점검</h3><p>방문에 필요한 정보를<br>정확하게.</p></li>
+        <li><span class="review-flow-number">02</span><h3>리뷰 참여 안내</h3><p>실제 고객의 경험이<br>후기로 이어지도록.</p></li>
+        <li><span class="review-flow-number">03</span><h3>리뷰·답변 관리</h3><p>고객의 목소리에<br>꾸준히 응답하도록.</p></li>
+        <li><span class="review-flow-number">04</span><h3>운영 현황 점검</h3><p>달라진 정보를<br>놓치지 않도록.</p></li>
+      </ol>
+      <div class="review-industries-section" id="review-industries">
+        <div class="review-flow-connector" aria-hidden="true"></div>
+      <div class="review-industries" aria-label="업종별 활용">
+        <article tabindex="0"><div class="review-industry-art"><img src="images-2/industry-restaurant-v3.png" alt="" width="1280" height="1280" loading="lazy" /></div><span class="review-industry-label">RESTAURANT</span><h3>맛집 · 음식점</h3><p>어떤 메뉴가 있는지, 다녀온 고객은 어땠는지.</p></article>
+        <article tabindex="0"><div class="review-industry-art"><img src="images-2/industry-cafe-v3.png" alt="" width="1280" height="1280" loading="lazy" /></div><span class="review-industry-label">CAFÉ</span><h3>카페</h3><p>어떤 분위기인지, 머물고 싶은 공간인지.</p></article>
+        <article tabindex="0"><div class="review-industry-art"><img src="images-2/industry-clinic-v3.png" alt="" width="1280" height="1280" loading="lazy" /></div><span class="review-industry-label">CLINIC</span><h3>병원 · 의료</h3><p>어디에 있는지, 방문 전 무엇을 알아야 하는지.</p></article>
+      </div>
+      </div>
+      <div class="review-flow-contact">
+        <a class="btn btn--lime btn--lg" href="contact.html?service=google-review">우리 매장 상담하기 ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ SEARCH IS CHANGING ============================= -->
+  <section class="section shift-section">
+    <div class="container">
+      <p class="eyebrow">SEO &amp; GEO</p>
+      <h2 class="h2">구글 지도부터 검색·AI까지.</h2>
+      <p class="lead shift-intro-description"><span>고객이 어디서 검색하든, 우리 브랜드를 발견할 수 있도록.</span><span>구글 지도의 매장 정보와 리뷰부터 웹사이트의 콘텐츠까지,</span><span>유조유는 구글 리뷰 마케팅과 SEO·GEO를 함께 설계합니다.</span></p>
+
+      <div class="sc-compare">
+        <!-- SEO -->
+        <article class="sc-card sc-card--seo">
+          <p class="sc-tag">SEO</p>
+          <h3 class="sc-card-title">검색엔진에서 잘 뜨게</h3>
+          <p class="sc-plat">구글 · 네이버 등</p>
+
+          <div class="sc-mock" aria-hidden="true">
+            <div class="serp-search">
+              <span class="serp-g">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#4285F4" d="M23 12.25c0-.78-.07-1.53-.2-2.25H12v4.5h6.19a5.29 5.29 0 0 1-2.29 3.47v2.88h3.7C21.44 18.98 23 15.92 23 12.25z"/><path fill="#34A853" d="M12 24c3.1 0 5.7-1.03 7.6-2.78l-3.7-2.88c-1.03.69-2.35 1.1-3.9 1.1-3 0-5.54-2.02-6.45-4.74H1.72v2.98A11.99 11.99 0 0 0 12 24z"/><path fill="#FBBC05" d="M5.55 14.7A7.2 7.2 0 0 1 5.17 12c0-.94.16-1.85.38-2.7V6.32H1.72A11.99 11.99 0 0 0 0 12c0 1.94.46 3.77 1.72 5.68l3.83-2.98z"/><path fill="#EA4335" d="M12 4.77c1.69 0 3.2.58 4.4 1.72l3.28-3.28C17.7 1.19 15.1 0 12 0 7.31 0 3.26 2.69 1.72 6.32l3.83 2.98C6.46 6.79 9 4.77 12 4.77z"/></svg>
+              </span>
+              <span class="serp-q">유조유</span>
+              <span class="serp-tools">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#5f6368" stroke-width="2" stroke-linecap="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h0M10 10h0M14 10h0M18 10h0M7.5 14h9"/></svg>
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#4285F4" stroke-width="2" stroke-linecap="round"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v4"/></svg>
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#4285F4" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+              </span>
+            </div>
+            <div class="serp-tabs">
+              <span class="is-active">전체</span><span>이미지</span><span>뉴스</span><span>쇼핑</span><span>동영상</span><span>도서</span><span>더보기 ⌄</span>
+            </div>
+            <div class="serp-result">
+              <div class="serp-result-top">
+                <span class="serp-rank">1</span>
+                <span class="serp-site"><b>u-jou.co.kr</b><i>https://u-jou.co.kr</i></span>
+              </div>
+              <p class="serp-link">유조유(U-JOU) | 검색엔진·AI 최적화 마케팅</p>
+              <p class="serp-desc">검색 노출부터 AI 답변 인용까지, 브랜드의 발견 가능성을 설계하는 SEO·GEO 파트너.</p>
+            </div>
+          </div>
+
+          <p class="sc-out">
+            <svg class="sc-check" viewBox="0 0 20 20" width="18" height="18"><circle cx="10" cy="10" r="10" fill="var(--lime-400)"/><path d="m5.8 10.3 2.6 2.6 5.8-6.2" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            검색 결과 상단 노출
+          </p>
+        </article>
+
+        <span class="sc-arrow" aria-hidden="true">
+          <svg viewBox="0 0 42 16" width="42" height="16" fill="none" stroke="var(--lime-500)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 8h38M33 2l6 6-6 6"/></svg>
+        </span>
+
+        <!-- GEO -->
+        <article class="sc-card sc-card--geo">
+          <p class="sc-tag">GEO</p>
+          <h3 class="sc-card-title">생성형 AI 답변에 잘 언급되게</h3>
+          <p class="sc-plat">챗GPT · 제미나이 등</p>
+
+          <div class="sc-mock" aria-hidden="true">
+            <div class="ai-head">
+              <span class="ai-avatar"><img src="images-2/chat-gpt.png" alt="ChatGPT" width="17" height="17"></span>
+              <span class="ai-bubble">B2B 마케팅 성과를 높이는 방법은?</span>
+            </div>
+            <p class="ai-answer">데이터 기반 타겟팅, 콘텐츠 마케팅, 그리고 검색 최적화가 핵심입니다. 특히 검색과 AI 답변 양쪽에서 브랜드 노출을 확보하는 것이 중요하며, <span class="ai-cite">유조유(u-jou)는</span> SEO·GEO를 함께 설계해 이를 지원합니다.</p>
+            <div class="ai-sources">
+              <span class="ai-src"><b>1</b><span class="ai-src-txt"><strong>유조유</strong><i>u-jou.co.kr</i></span></span>
+              <span class="ai-src"><b>2</b><span class="ai-src-txt"><strong>HubSpot</strong><i>hubspot.com</i></span></span>
+              <span class="ai-src"><b>3</b><span class="ai-src-txt"><strong>Google</strong><i>google.com</i></span></span>
+            </div>
+          </div>
+
+          <p class="sc-out">
+            <svg class="sc-check" viewBox="0 0 20 20" width="18" height="18"><circle cx="10" cy="10" r="10" fill="var(--lime-400)"/><path d="m5.8 10.3 2.6 2.6 5.8-6.2" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            AI 답변 내 브랜드 언급
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ PROBLEM ============================= -->
+  <section class="section section--alt">
+    <div class="container">
+      <h2 class="h2">검색해도 보이지 않는다면, 이유부터 찾습니다.</h2>
+
+      <div class="problem-grid" style="margin-top:40px;">
+        <div class="problem-card">
+          <p class="problem-num">01</p>
+          <div class="problem-body">
+            <h4>검색해도 우리 회사가 보이지 않습니다</h4>
+            <p class="fix">→ 검색 노출 구조 개선</p>
+          </div>
+        </div>
+        <div class="problem-card">
+          <p class="problem-num">02</p>
+          <div class="problem-body">
+            <h4>ChatGPT가 경쟁사만 추천합니다</h4>
+            <p class="fix">→ GEO / AI Citation 구조 개선</p>
+          </div>
+        </div>
+        <div class="problem-card">
+          <p class="problem-num">03</p>
+          <div class="problem-body">
+            <h4>콘텐츠는 많은데 검색 유입이 없습니다</h4>
+            <p class="fix">→ 콘텐츠 구조 및 키워드 전략</p>
+          </div>
+        </div>
+        <div class="problem-card">
+          <p class="problem-num">04</p>
+          <div class="problem-body">
+            <h4>무엇부터 수정해야 할지 모르겠습니다</h4>
+            <p class="fix">→ SEO·GEO 진단 및 로드맵</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ WHAT AI SEES ============================= -->
+  <section class="section">
+    <div class="container">
+      <h2 class="h2">검색 결과뿐 아니라, AI의 답변도 살펴봐야 합니다.</h2>
+      <p class="lead">검색 패러다임이 Google·Naver 중심에서 ChatGPT·Gemini·Perplexity 등 <br><span class="accent">AI 생성형 답변으로 급격히 전환</span>되고 있습니다.</p>
+
+      <div class="check-grid">
+        <div class="check-card">
+          <span class="check-num">01</span>
+          <h4>AI가 우리 사이트를 읽을 수 있는가</h4>
+          <p>robots.txt, llms.txt, 구조화 데이터, 사이트맵 등 AI와 검색엔진이 브랜드 정보를 제대로 수집할 수 있는지 확인합니다.</p>
+        </div>
+        <div class="check-card">
+          <span class="check-num">02</span>
+          <h4>AI가 우리 브랜드를 이해하고 있는가</h4>
+          <p>브랜드명, 서비스, 전문 분야, 외부 언급 등의 연결 관계를 분석해 브랜드 Entity가 명확하게 형성되어 있는지 확인합니다.</p>
+        </div>
+        <div class="check-card">
+          <span class="check-num">03</span>
+          <h4>실제 AI 답변에 등장하는가</h4>
+          <p>ChatGPT·Gemini·Perplexity 등 주요 AI 검색 환경에서 브랜드 언급·인용·경쟁사 노출 현황을 직접 확인합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ BRAND VISIBILITY (dark) ============================= -->
+  <section class="section section--dark bv-section">
+    <div class="container">
+      <div class="bv-layout">
+        <div class="bv-text">
+          <h2 class="h2 light">내 브랜드는 지금<br>어떻게 보이고 있을까?</h2>
+          <p class="lead light">좋은 브랜드라도 검색엔진과 AI가 이해하지 못하면<br>추천 후보에 포함되기 어렵습니다.</p>
+        </div>
+        <div class="chat-card">
+          <span class="chat-query">"강남 피부과 추천해줘"</span>
+          <div class="chat-row"><span>경쟁사 A</span><span class="chat-tag">CITED</span></div>
+          <div class="chat-row"><span>경쟁사 B</span><span class="chat-tag">CITED</span></div>
+          <div class="chat-row"><span>경쟁사 C</span><span class="chat-tag">CITED</span></div>
+          <div class="chat-row chat-row--miss"><span>YOUR BRAND</span><span class="chat-tag">NOT FOUND</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ SERVICES ============================= -->
+  <section class="section" id="services">
+    <div class="container">
+      <p class="eyebrow">SERVICES</p>
+      <h2 class="h2">핵심 서비스</h2>
+      <p class="lead" style="margin-bottom:40px;">구글 리뷰부터 검색·AI, 글로벌 SNS까지. 브랜드에 필요한 서비스를 함께 설계합니다.</p>
+
+      <div class="services-grid">
+        <div class="service-card review-service-card"><span class="service-tag">LOCAL PRESENCE</span><h4>Google Review Marketing</h4><p class="sub">매장의 첫인상을 만드는 리뷰 마케팅</p><ul class="service-list"><li>구글 비즈니스 프로필 점검</li><li>실제 고객 리뷰 참여 안내</li><li>리뷰 모니터링·답변 관리</li><li>운영 현황 및 개선 항목 점검</li></ul><a class="service-out review-text-link" href="contact.html?service=google-review">구글 리뷰 상담하기 ↗</a></div>
+        <div class="service-card">
+          <span class="service-tag">AUDIT</span>
+          <h4>SEO Audit</h4>
+          <p class="sub">사이트 검색 노출 구조 진단</p>
+          <ul class="service-list">
+            <li>사이트 크롤링</li>
+            <li>색인 상태</li>
+            <li>사이트 구조</li>
+            <li>메타데이터</li>
+            <li>내부 링크</li>
+            <li>페이지 속도</li>
+          </ul>
+          <p class="service-out">→ Technical Audit / Index Report</p>
+        </div>
+        <div class="service-card">
+          <span class="service-tag">STRATEGY</span>
+          <h4>SEO Strategy</h4>
+          <p class="sub">검색 수요 기반 전략 설계</p>
+          <ul class="service-list">
+            <li>키워드 리서치</li>
+            <li>검색 의도 분석</li>
+            <li>경쟁사 분석</li>
+            <li>콘텐츠 클러스터</li>
+            <li>랜딩페이지 전략</li>
+          </ul>
+          <p class="service-out">→ Keyword Map / Content Plan</p>
+        </div>
+        <div class="service-card">
+          <span class="service-tag">GENERATIVE AI</span>
+          <h4>GEO / AEO</h4>
+          <p class="sub">생성형 AI 검색 환경 최적화</p>
+          <ul class="service-list">
+            <li>ChatGPT</li>
+            <li>Gemini</li>
+            <li>Perplexity</li>
+            <li>AI Overview</li>
+            <li>브랜드·콘텐츠 인용 구조 개선</li>
+          </ul>
+          <p class="service-out">→ AI Visibility / Citation Analysis</p>
+        </div>
+        <div class="service-card">
+          <span class="service-tag">CONTENT</span>
+          <h4>Content Optimization</h4>
+          <p class="sub">검색·AI 친화 콘텐츠 구축</p>
+          <ul class="service-list">
+            <li>블로그</li>
+            <li>서비스 페이지</li>
+            <li>FAQ</li>
+            <li>비교 콘텐츠</li>
+            <li>전문 콘텐츠</li>
+          </ul>
+          <p class="service-out">→ Landing / FAQ / Article</p>
+        </div>
+        <a href="sns-operation.html" class="service-card service-card--extra">
+          <span class="service-tag service-tag--extra">+ ADD-ON</span>
+          <h4>Global SNS Operation</h4>
+          <p class="sub">국가별 공식 SNS 채널 구축·운영</p>
+          <ul class="service-list">
+            <li>Instagram · YouTube · TikTok 동시 운영</li>
+            <li>타겟 국가별 공식 채널 운영</li>
+            <li>국가별 언어·콘텐츠 현지화</li>
+            <li>콘텐츠 업로드 및 채널 관리</li>
+            <li>운영 가능 국가 별도 협의</li>
+          </ul>
+          <p class="service-out">→ Multi-Channel / Localization / Operation</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ WHY U-JOU ============================= -->
+  <section class="section section--alt why-ujou-section">
+    <div class="container">
+      <p class="eyebrow">WHY U-JOU</p>
+      <h2 class="h2">검색 노출만 보는 SEO가 아닙니다</h2>
+      <p class="lead">검색엔진 최적화부터 <span class="accent">AI가 브랜드를 이해하는 정보 구조</span>까지 함께 설계합니다.</p>
+
+      <div class="why-pills" style="margin-top:40px;">
+        <div class="why-pill">
+          <div class="why-pill-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.3-4.3" stroke-linecap="round"/></svg></div>
+          <span class="tag">SEARCH</span><p>검색 수요 분석</p>
+        </div>
+        <div class="why-pill">
+          <div class="why-pill-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3.5" width="16" height="17" rx="2"/><path d="M8 9h8M8 13h8M8 17h5" stroke-linecap="round"/></svg></div>
+          <span class="tag">CONTENT</span><p>콘텐츠 구조 설계</p>
+        </div>
+        <div class="why-pill">
+          <div class="why-pill-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 8l8-5 8 5-8 5-8-5z"/><path d="M4 8v8l8 5 8-5V8" stroke-linejoin="round"/></svg></div>
+          <span class="tag">ENTITY</span><p>브랜드 정보 구조화</p>
+        </div>
+        <div class="why-pill">
+          <div class="why-pill-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3z"/></svg></div>
+          <span class="tag">AI</span><p>생성형 AI 노출 분석</p>
+        </div>
+        <div class="why-pill">
+          <div class="why-pill-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 20V12M11 20V6M18 20v-9"/></svg></div>
+          <span class="tag">DATA</span><p>지속적인 측정과 개선</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ ANALYSIS (dark) ============================= -->
+  <section class="section section--dark analysis-section">
+    <div class="container">
+      <div class="section-head--row">
+        <div>
+          <h2 class="h2 light">보이지 않는 이유를, 다섯 가지 관점에서 진단합니다.</h2>
+          <p class="lead light">검색엔진과 AI가 브랜드를 읽는 5가지 신호를 함께 진단합니다.</p>
+        </div>
+        <span class="status-badge status-badge--strong">DEMO · SAMPLE ANALYSIS</span>
+      </div>
+
+      <div class="analysis-grid">
+        <div class="analysis-card">
+          <div class="analysis-top"><strong>TECHNICAL</strong><span class="status-badge status-badge--strong">STRONG</span></div>
+          <ul><li>· 크롤링</li><li>· 색인</li><li>· Schema</li><li>· 내부링크</li></ul>
+        </div>
+        <div class="analysis-card">
+          <div class="analysis-top"><strong>SEARCH</strong><span class="status-badge status-badge--mid">MODERATE</span></div>
+          <ul><li>· 키워드</li><li>· 검색의도</li><li>· 경쟁사</li><li>· SERP</li></ul>
+        </div>
+        <div class="analysis-card">
+          <div class="analysis-top"><strong>ENTITY</strong><span class="status-badge status-badge--weak">WEAK</span></div>
+          <ul><li>· 브랜드명</li><li>· 서비스</li><li>· 주제 연결성</li></ul>
+        </div>
+        <div class="analysis-card">
+          <div class="analysis-top"><strong>AUTHORITY</strong><span class="status-badge status-badge--mid">MODERATE</span></div>
+          <ul><li>· 외부 언급</li><li>· 출처</li><li>· 전문성 콘텐츠</li></ul>
+        </div>
+        <div class="analysis-card">
+          <div class="analysis-top"><strong>AI VISIBILITY</strong><span class="status-badge status-badge--weak">WEAK</span></div>
+          <ul><li>· AI 언급</li><li>· Citation</li><li>· Answer Coverage</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ OUR FRAMEWORK ============================= -->
+  <section class="section" id="framework">
+    <div class="container">
+      <h2 class="h2">우리는 이렇게 일합니다</h2>
+      <p class="lead">진단에서 끝내지 않고, 적용과 개선까지 이어갑니다.</p>
+      <p class="fw-note">회사가 접근하는 방법론입니다 — 실제 계약 후 진행 절차는 아래 PROCESS를 참고하세요.</p>
+
+      <div class="steps-list">
+        <div class="step-row">
+          <span class="step-tag">STEP 01</span>
+          <div><h4>Search Intelligence</h4><p>검색 시장과 경쟁사를 분석합니다.</p></div>
+        </div>
+        <div class="step-row">
+          <span class="step-tag">STEP 02</span>
+          <div><h4>Technical Foundation</h4><p>검색엔진과 AI가 사이트를 이해할 수 있도록 구조를 개선합니다.</p></div>
+        </div>
+        <div class="step-row">
+          <span class="step-tag">STEP 03</span>
+          <div><h4>Entity Building</h4><p>브랜드·서비스·전문 영역의 관계를 명확하게 구축합니다.</p></div>
+        </div>
+        <div class="step-row">
+          <span class="step-tag">STEP 04</span>
+          <div><h4>Content Authority</h4><p>질문과 검색 의도를 기반으로 콘텐츠를 구축합니다.</p></div>
+        </div>
+        <div class="step-row">
+          <span class="step-tag">STEP 05</span>
+          <div><h4>AI Citation</h4><p>생성형 AI 환경에서 브랜드 언급과 인용 가능성을 높입니다.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ HOW GEO WORKS (dark) ============================= -->
+  <section class="section section--dark geo-works-section">
+    <div class="container">
+      <p class="eyebrow light" style="justify-content:center;">HOW GEO WORKS</p>
+      <h2 class="h2 light" style="text-align:center;">AI가 브랜드를 인식하는 구조</h2>
+      <p class="geo-summary">AI는 하나의 웹페이지가 아니라 <span class="accent-light">웹에 분산된 브랜드 정보와 관계</span>를 함께 읽습니다.</p>
+
+      <div class="geo-diagram">
+        <img src="images-2/HOW-GEO-WORKS-img2.jpg" alt="웹사이트·소셜·미디어 등 브랜드 정보가 YOUR BRAND / ENTITY로 모여, Google·ChatGPT·Gemini 같은 AI 검색 결과로 이어지는 구조" class="geo-diagram-img" />
+      </div>
+
+      <!-- 모바일 전용: 원본 이미지는 좁은 화면에서 텍스트가 뭉개져 대신 CSS로 그린 인포그래픽 -->
+      <div class="geo-diagram-mobile" role="img" aria-label="웹사이트·소셜·미디어 등 브랜드 정보가 YOUR BRAND / ENTITY로 모여, Google·ChatGPT·Gemini 같은 AI 검색 결과로 이어지는 구조">
+        <div class="geo-flow-row">
+          <span class="geo-flow-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a13 13 0 010 18M12 3a13 13 0 000 18"/></svg>
+            Website
+          </span>
+          <span class="geo-flow-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="7.5" cy="12" r="6.5"/><circle cx="16.5" cy="12" r="6.5"/></svg>
+            Social
+          </span>
+          <span class="geo-flow-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13a1 1 0 01-1 1H6a1 1 0 01-1-1V4a1 1 0 011-1z"/><path d="M14 3v5h5" stroke-linejoin="round"/><path d="M8 13h8M8 17h5"/></svg>
+            Media
+          </span>
+        </div>
+
+        <span class="geo-flow-arrow">
+          <svg width="14" height="9" viewBox="0 0 14 9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M1 1l6 6 6-6"/>
+          </svg>
+        </span>
+
+        <div class="geo-flow-entity">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3z"/></svg>
+          <strong>YOUR BRAND</strong>
+        </div>
+
+        <span class="geo-flow-arrow">
+          <svg width="14" height="9" viewBox="0 0 14 9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M1 1l6 6 6-6"/>
+          </svg>
+        </span>
+
+        <div class="geo-flow-row">
+          <span class="geo-flow-pill geo-flow-pill--ai">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.3-4.3" stroke-linecap="round"/></svg>
+            Google
+          </span>
+          <span class="geo-flow-pill geo-flow-pill--ai">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3z"/></svg>
+            ChatGPT
+          </span>
+          <span class="geo-flow-pill geo-flow-pill--ai">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 20V12M11 20V6M18 20v-9"/></svg>
+            Gemini
+          </span>
+        </div>
+      </div>
+
+      <div class="geo-steps">
+        <div class="geo-step">
+          <p class="geo-step-num">01</p>
+          <h4>정보가 쌓이고</h4>
+          <span class="geo-step-rule"></span>
+          <p>Website, Blog, Social, PR 등<br>웹 곳곳에서 브랜드 신호가<br>만들어집니다.</p>
+        </div>
+        <div class="geo-step">
+          <p class="geo-step-num">02</p>
+          <h4>관계가 연결되고</h4>
+          <span class="geo-step-rule"></span>
+          <p>AI는 반복되는 정보와 관계를<br>연결해 브랜드를 하나의<br>Entity로 이해합니다.</p>
+        </div>
+        <div class="geo-step">
+          <p class="geo-step-num">03</p>
+          <h4>AI에서 발견됩니다</h4>
+          <span class="geo-step-rule"></span>
+          <p>정리된 브랜드 정보는 Google,<br>ChatGPT, Gemini 등의 답변과<br>검색 결과에 반영됩니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FREE DIAGNOSIS CARD ============================= -->
+  <section class="section" id="diagnosis">
+    <div class="container">
+      <div class="diag-card">
+        <p class="eyebrow">FREE DIAGNOSIS</p>
+        <h2 class="h2">내 브랜드 AI 노출 확인하기</h2>
+        <p class="lead">URL과 이메일만 입력하면 됩니다. 담당자가 직접 확인 후 결과를 보내드립니다.</p>
+        <form class="diag-form" id="diagForm" action="https://formspree.io/f/mvkoprop" method="POST">
+          <div class="diag-form-row">
+            <input type="url" name="website" class="diag-input" placeholder="https://yourbrand.com" required />
+            <input type="email" name="email" class="diag-input" placeholder="결과 받으실 이메일" required />
+          </div>
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+          <button type="submit" class="btn btn--lime btn--lg diag-submit">내 브랜드 AI 노출 확인하기</button>
+          <p class="diag-msg" id="diagMsg" role="status" aria-live="polite"></p>
+        </form>
+        <div class="diag-tags">
+          <span class="diag-tag">구글 색인</span>
+          <span class="diag-tag">기술 SEO</span>
+          <span class="diag-tag">AI 노출도</span>
+          <span class="diag-tag">브랜드 정보</span>
+          <span class="diag-tag">콘텐츠 신뢰도</span>
+          <span class="diag-tag">경쟁사 비교</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ WHAT WE DELIVER ============================= -->
+  <section class="section section--alt" id="output">
+    <div class="container">
+      <h2 class="h2">무엇을 고쳐야 할지, 실행할 수 있는 결과물로.</h2>
+      <p class="lead" style="margin-bottom:40px;">SEO·GEO 프로젝트의 주요 산출물입니다.</p>
+
+      <div class="deliver-list">
+        <div class="deliver-item">
+          <div class="deliver-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13a1 1 0 01-1 1H6a1 1 0 01-1-1V4a1 1 0 011-1z"/><path d="M14 3v5h5" stroke-linejoin="round"/><path d="M8 13h8M8 17h5"/></svg></div>
+          <div><h4>SEO Audit Report</h4><p>사이트 문제 진단 보고서</p></div>
+        </div>
+        <div class="deliver-item">
+          <div class="deliver-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13a1 1 0 01-1 1H6a1 1 0 01-1-1V4a1 1 0 011-1z"/><path d="M14 3v5h5" stroke-linejoin="round"/><path d="M8 13h8M8 17h5"/></svg></div>
+          <div><h4>Keyword Opportunity Map</h4><p>검색 키워드 및 기회 분석</p></div>
+        </div>
+        <div class="deliver-item">
+          <div class="deliver-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13a1 1 0 01-1 1H6a1 1 0 01-1-1V4a1 1 0 011-1z"/><path d="M14 3v5h5" stroke-linejoin="round"/><path d="M8 13h8M8 17h5"/></svg></div>
+          <div><h4>Content Architecture</h4><p>콘텐츠 구조 설계</p></div>
+        </div>
+        <div class="deliver-item">
+          <div class="deliver-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13a1 1 0 01-1 1H6a1 1 0 01-1-1V4a1 1 0 011-1z"/><path d="M14 3v5h5" stroke-linejoin="round"/><path d="M8 13h8M8 17h5"/></svg></div>
+          <div><h4>GEO Visibility Report</h4><p>AI 검색 노출 현황</p></div>
+        </div>
+        <div class="deliver-item">
+          <div class="deliver-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13a1 1 0 01-1 1H6a1 1 0 01-1-1V4a1 1 0 011-1z"/><path d="M14 3v5h5" stroke-linejoin="round"/><path d="M8 13h8M8 17h5"/></svg></div>
+          <div><h4>Competitor Analysis</h4><p>경쟁사 SEO/GEO 분석</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ INDUSTRIES ============================= -->
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">INDUSTRIES</p>
+      <h2 class="h2" style="margin-bottom:40px;">이런 기업에 적합합니다</h2>
+
+      <div class="industry-grid">
+        <div class="industry-card">
+          <div class="industry-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3" y="5" width="8" height="16"/><rect x="13" y="11" width="8" height="10"/><path d="M6.5 9h1M6.5 13h1M6.5 17h1M17 15h1" stroke-linecap="round"/></svg></div>
+          <h4>브랜드 / 기업</h4>
+          <p>검색 노출이 부족한 기업</p>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg></div>
+          <h4>병원 / 의료</h4>
+          <p>지역 검색과 전문성 콘텐츠가 중요한 업종</p>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="7.5" cy="12" r="6.5"/><circle cx="16.5" cy="12" r="6.5"/></svg></div>
+          <h4>B2B</h4>
+          <p>검색량은 작지만 전환 가치가 높은 산업</p>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 8h16l-1.5 11a1 1 0 01-1 1H6.5a1 1 0 01-1-1L4 8z"/><path d="M8 8V6a4 4 0 018 0v2"/></svg></div>
+          <h4>이커머스</h4>
+          <p>상품·카테고리 검색 유입이 중요한 서비스</p>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 3a13 13 0 010 18M12 3a13 13 0 000 18M3 12h18"/></svg></div>
+          <h4>글로벌 브랜드</h4>
+          <p>다국가 SEO/GEO가 필요한 기업</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ PROCESS ============================= -->
+  <section class="section section--alt">
+    <div class="container">
+      <p class="eyebrow">PROCESS</p>
+      <h2 class="h2">서비스 진행 프로세스</h2>
+      <p class="lead" style="white-space:nowrap; max-width:none;">계약 후 실제로 진행되는 업무 절차입니다.</p>
+
+      <div class="process-grid">
+        <div class="process-card"><p class="process-num">01</p><h4>진단</h4><p>사이트·시장 분석, SEO·GEO 진단</p><p class="process-out">SEO Audit Report</p></div>
+        <div class="process-card"><p class="process-num">02</p><h4>전략</h4><p>키워드·콘텐츠·구조 전략 수립</p><p class="process-out">Keyword / Content Map</p></div>
+        <div class="process-card"><p class="process-num">03</p><h4>구축</h4><p>사이트·콘텐츠 구조 설계</p><p class="process-out">Content Architecture</p></div>
+        <div class="process-card"><p class="process-num">04</p><h4>적용</h4><p>사이트 및 콘텐츠에 실제 반영</p><p class="process-out">GEO Report</p></div>
+        <div class="process-card"><p class="process-num">05</p><h4>측정</h4><p>검색·AI 노출 모니터링</p><p class="process-out">Monthly Report</p></div>
+        <div class="process-card"><p class="process-num">06</p><h4>개선</h4><p>데이터 기반 지속 개선</p><p class="process-out">Monthly Report</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ INSIGHTS ============================= -->
+  <section class="section insights-section">
+    <div class="container">
+      <h2 class="h2" style="margin-bottom:40px;">검색과 AI 노출에 대한 우리의 관점</h2>
+
+      <div class="insights-grid">
+        <div class="insight-card">
+          <span class="tag">SEO · GEO</span>
+          <h4>SEO와 GEO는 무엇이 다른가</h4>
+          <a href="#" class="go">읽어보기 →</a>
+        </div>
+        <div class="insight-card">
+          <span class="tag">GEO</span>
+          <h4>AI가 브랜드를 추천하는 기준은 무엇인가</h4>
+          <a href="#" class="go">읽어보기 →</a>
+        </div>
+        <div class="insight-card">
+          <span class="tag">CHECKLIST</span>
+          <h4>AI 검색 노출을 위해 먼저 점검해야 할 8가지</h4>
+          <a href="#" class="go">읽어보기 →</a>
+        </div>
+      </div>
+      <p class="insights-more"><a href="#">전체 인사이트 보기 →</a></p>
+    </div>
+  </section>
+
+  <!-- ============================ FAQ ============================= -->
+  <section class="section section--alt" id="faq">
+    <div class="container">
+      <p class="eyebrow">FAQ</p>
+      <h2 class="h2" style="margin-bottom:32px;">자주 묻는 질문</h2>
+
+      <div class="faq-list">
+        <details class="faq-item"><summary>구글 리뷰 마케팅은 어떤 업무를 관리하나요?<span class="faq-plus">+</span></summary><p>매장 정보 점검, 실제 방문 고객의 리뷰 참여 안내, 리뷰 모니터링과 답변 방향, 운영 현황 점검을 중심으로 상담합니다. 세부 업무와 리포트 범위는 매장 상황에 맞춰 협의합니다.</p></details>
+        <details class="faq-item"><summary>홈페이지가 없어도 구글 리뷰 상담을 받을 수 있나요?<span class="faq-plus">+</span></summary><p>네. 상담 시 매장명과 지역 또는 구글 지도 링크를 남겨주세요. 웹사이트 URL이 필요한 SEO·GEO 무료 진단과 별도로 상담할 수 있습니다.</p></details>
+        <details class="faq-item"><summary>구글 리뷰와 SEO·GEO를 함께 진행할 수 있나요?<span class="faq-plus">+</span></summary><p>네. 구글 지도에서의 매장 정보·리뷰 관리와 웹사이트의 검색·AI 정보 구조 개선을 함께 상담할 수 있습니다. 각 채널의 현황과 목표에 맞춰 필요한 업무를 제안합니다.</p></details>
+        <details class="faq-item">
+          <summary>SEO와 GEO는 무엇이 다른가요?<span class="faq-plus">+</span></summary>
+          <p>SEO는 구글·네이버 같은 검색엔진 결과 상위 노출에 집중하고, GEO는 ChatGPT·Gemini 같은 생성형 AI가 답변할 때 브랜드를 언급·인용하도록 최적화하는 것입니다. U-JOU는 두 영역을 함께 설계합니다.</p>
+        </details>
+        <details class="faq-item">
+          <summary>ChatGPT 노출도 관리할 수 있나요?<span class="faq-plus">+</span></summary>
+          <p>네, 브랜드 Entity 구축과 콘텐츠 인용 구조 개선을 통해 ChatGPT·Gemini·Perplexity 등 주요 생성형 AI의 답변에 브랜드가 언급될 가능성을 높이는 작업을 진행합니다.</p>
+        </details>
+        <details class="faq-item">
+          <summary>얼마나 지나야 효과가 나타나나요?<span class="faq-plus">+</span></summary>
+          <p>기술적 개선은 몇 주 내 반영되지만, 검색·AI 노출 순위 변화는 통상 8~12주 정도의 데이터 축적이 필요합니다. 월별 리포트로 변화 추이를 공유해 드립니다.</p>
+        </details>
+        <details class="faq-item">
+          <summary>상위 노출을 보장할 수 있나요?<span class="faq-plus">+</span></summary>
+          <p>검색엔진과 AI 알고리즘은 특정 순위를 계약으로 보장할 수 없습니다. 다만 데이터 기반 진단과 지속적인 개선으로 노출 가능성을 실질적으로 높여드립니다.</p>
+        </details>
+        <details class="faq-item">
+          <summary>기존 홈페이지도 SEO 작업이 가능한가요?<span class="faq-plus">+</span></summary>
+          <p>가능합니다. 기존 사이트 구조를 진단한 뒤, 재구축 없이 개선 가능한 부분과 신규 구축이 필요한 부분을 구분해 로드맵을 제안해 드립니다.</p>
+        </details>
+        <details class="faq-item">
+          <summary>콘텐츠 제작도 함께 진행하나요?<span class="faq-plus">+</span></summary>
+          <p>네, Content Optimization 서비스를 통해 블로그·서비스 페이지·FAQ·비교 콘텐츠 등 검색과 AI 모두에 최적화된 콘텐츠를 함께 제작합니다.</p>
+        </details>
+        <details class="faq-item">
+          <summary>네이버와 구글 모두 가능한가요?<span class="faq-plus">+</span></summary>
+          <p>네, 네이버와 구글의 검색 알고리즘 특성을 각각 반영해 진단하고 전략을 수립하며, 두 채널 모두에서 노출을 개선하는 것을 목표로 합니다.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FINAL CTA (dark) ============================= -->
+  <section class="section section--dark" id="contact">
+    <div class="container final-cta">
+      <h2 class="h2 light">고객이 검색하는 순간,<br>우리 매장은 어떻게 보일까요?</h2>
+      <p class="lead light">구글 리뷰부터 SEO·GEO까지.<br>지금 우리 매장과 브랜드의 온라인 첫인상을 함께 살펴보세요.</p>
+      <a href="contact.html" class="btn btn--lime btn--lg">마케팅 상담 신청하기</a>
+    </div>
+  </section>
+
+  <!-- ============================ FOOTER ============================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#" class="logo">
+          <span class="logo-mark">
+          <svg width="30" height="30" viewBox="0 0 28 28" fill="none">
+            <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/>
+            <circle cx="18.5" cy="18.5" r="7" fill="#C6F135"/>
+          </svg>
+        </span>
+          <span class="logo-word">U-JOU<span class="logo-tag">AD</span></span>
+        </a>
+        <div class="footer-links">
+          <a href="#services">서비스안내</a>
+          <a href="#faq">자주 묻는 질문</a>
+          <a href="#">개인정보처리방침</a>
+          <a href="contact.html">문의하기</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>(주)유조우애드 · CEO [미정] · CONTACT [미정] · LOCATION [미정]</span>
+        <span>U-JOU AD — GOOGLE REVIEW · SEO · GEO</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script-v2.js?v=title-reentry"></script>
+</body>
+</html>

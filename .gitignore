@@ -1,0 +1,7 @@
+.DS_Store
+.playwright-mcp/
+*.zip
+.env
+.env.*
+!.env.example
+/U-JOU_고객사_전달본/
